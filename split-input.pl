@@ -3,9 +3,10 @@ use warnings;
 use strict;
 
 while (my $input = <>) {
+	chomp($input);
 	my @words = split(/\s+/, $input);
 	foreach my $w (@words) {
-		chomp($w);
+		$w =~ s/[:;]$//;
 		print("$w\n");
 	}
 }
