@@ -1,0 +1,7 @@
+depends on fzf
+
+create a keybinding to run popup in .tmux.conf
+
+```
+bind tab run-shell "/<path>/.tmux-complete/popup.sh"
+```
